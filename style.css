@@ -1,0 +1,24 @@
+
+input {
+    margin-right: 10px;
+}
+
+.main > li:not(details > ul > li)::marker {
+    content: "";
+}
+
+li {
+    overflow-x: hidden;
+}
+
+summary {
+    cursor: pointer;
+}
+
+details > ul > li {
+    margin-top: 5px;
+}
+
+details > ul > li {
+    margin-top: 5px;
+}
