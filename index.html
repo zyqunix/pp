@@ -1,134 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt Präsentation</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Projekt Präsentation</title>
-        <meta name="description" content="Ein interaktiver Wegweiser für die ersten Schritte mit Brackets.">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+    <style>
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
 
-        <h1>Projekt Präsentation</h1>
-        <ul class="main">
-            <li><input type="checkbox" checked disabled>
-                <details> 
-                    <summary>Was ist ein Elektromotor</summary>
-                    <ul>
-                        <li>Ein Elektromotor ist ein elektromechanischer Wandler, der elektrische Leistung in mechanische Leistung umwandelt.</li>
-                    </ul>
-                </details>
-            </li>
-            <br>
-            <li><input type="checkbox" checked disabled>
-                <details>
-                    <summary>Aufbau des Elektromors</summary>
-                    <ul>
-                        <li>Stator: Der Stator ist der stationäre Teil des Motors. Er besteht aus einem Gehäuse und einem Magnetfeld, das entweder durch Permanentmagneten oder durch Elektromagnete erzeugt wird. Der Stator hat oft Wicklungen, die mit Strom versorgt werden, um ein Magnetfeld zu erzeugen.</li>
+        ::-webkit-scrollbar-thumb {
+            background: #1e90ff;
+            border-radius: 10px;
+        }
 
-                        <li>Rotor: Der Rotor ist der bewegliche Teil des Motors, der sich innerhalb des Stators dreht. Er kann aus einer Spule oder einem Kurzschlussring bestehen und ist oft mit einem Magnetfeld ausgestattet, das mit dem des Stators interagiert.</li>
+        ::-webkit-scrollbar-track {
+            background: #121212;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 font-sans p-6">
 
-                        <li>Wicklungen: Die Wicklungen sind Drahtspulen, die im Stator oder Rotor angeordnet sind. Wenn Strom durch diese Wicklungen fließt, erzeugen sie ein Magnetfeld, das die Bewegung des Rotors antreibt.</li>
+    <h1 class="text-3xl font-bold text-center text-blue-400 mb-6 flex justify-center items-center gap-2">
+        <i data-lucide="box" class="w-8 h-8"></i>
+        Projekt Präsentation
+    </h1>
 
-                        <li>Kollektor und Bürsten (bei Gleichstrommotoren): In Gleichstrommotoren gibt es einen Kollektor, der mit Bürsten in Kontakt steht. Diese Bürsten übertragen den Strom auf die Wicklungen des Rotors und sorgen dafür, dass sich der Rotor dreht.</li>
+    <ul class="space-y-4">
+        <li class="bg-gray-800 p-4 rounded-lg shadow-md flex items-start">
+            <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+            <details class="ml-4 w-full">
+                <summary class="text-lg font-semibold cursor-pointer flex items-center gap-2">
+                    <i data-lucide="info" class="w-5 h-5"></i>
+                    Was ist ein Elektromotor?
+                </summary>
+                <ul class="mt-2 text-gray-300 text-sm pl-4">
+                    <li>Ein Elektromotor ist ein elektromechanischer Wandler, der elektrische Leistung in mechanische Leistung umwandelt.</li>
+                </ul>
+            </details>
+        </li>
 
-                        <li>Gehäuse: Das Gehäuse schützt die inneren Komponenten des Motors und sorgt für Stabilität. Es kann auch Kühl- und Belüftungsöffnungen enthalten, um eine Überhitzung zu verhindern.</li>
+        <li class="bg-gray-800 p-4 rounded-lg shadow-md flex items-start">
+            <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+            <details class="ml-4 w-full">
+                <summary class="text-lg font-semibold cursor-pointer flex items-center gap-2">
+                    <i data-lucide="settings" class="w-5 h-5"></i>
+                    Aufbau des Elektromotors
+                </summary>
+                <ul class="mt-2 text-gray-300 text-sm pl-4 space-y-1">
+                    <li><strong>Stator:</strong> Der stationäre Teil des Motors, erzeugt das Magnetfeld.</li>
+                    <li><strong>Rotor:</strong> Der bewegliche Teil, dreht sich im Magnetfeld.</li>
+                    <li><strong>Wicklungen:</strong> Spulen, die Magnetfelder erzeugen.</li>
+                    <li><strong>Kollektor & Bürsten:</strong> In Gleichstrommotoren zur Stromübertragung.</li>
+                    <li><strong>Gehäuse:</strong> Schützt die Komponenten.</li>
+                    <li><strong>Lager:</strong> Ermöglichen reibungslose Drehung.</li>
+                    <li><strong>Anschlussklemmen:</strong> Verbindung zur Stromquelle.</li>
+                    <li><strong>Funktionsweise:</strong> Ein elektrischer Strom erzeugt ein Magnetfeld, das eine mechanische Bewegung erzeugt.</li>
+                </ul>
+            </details>
+        </li>
 
-                        <li>Lager: Lager ermöglichen eine reibungslose Drehung des Rotors und reduzieren die Reibung zwischen beweglichen Teilen.</li>
+        <li class="bg-gray-800 p-4 rounded-lg shadow-md flex items-start">
+            <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+            <details class="ml-4 w-full">
+                <summary class="text-lg font-semibold cursor-pointer flex items-center gap-2">
+                    <i data-lucide="zap" class="w-5 h-5"></i>
+                    Elektromagnetismus
+                </summary>
+                <ul class="mt-2 text-gray-300 text-sm pl-4 space-y-1">
+                    <li>Entdeckt 1820 von Hans Christian Ørsted.</li>
+                    <li>Eine der vier Grundkräfte der Physik.</li>
+                    <li>Ursache für Licht, Elektrizität und Magnetismus.</li>
+                </ul>
+            </details>
+        </li>
 
-                        <li>Anschlussklemmen: Diese Klemmen dienen dazu, den Motor mit einer Stromquelle zu verbinden.</li>
-                        
-                        <li>Die Funktionsweise eines Elektromotors beruht auf dem Prinzip der elektromagnetischen Induktion, bei dem ein elektrischer Strom ein Magnetfeld erzeugt, das eine mechanische Bewegung erzeugt.</li>
-                    </ul>
-                </details></li>
-            <br>
-            <li><input type="checkbox" checked disabled>
-                <details>Elektromagnetismus
-                    <summary>
-                        <li>Entdeckung 1820 von dem dänische Physiker Hans Christian Ørsted</li>
-                        <li>Einer der vier Grundkräfte der Physik</li>
-                        <li>Die elektromagnetische Wechselwirkung verursacht Licht, Elektrizität und Magnetismus</li>
-                    </summary>
-                </details>
-            </li>
-            <br>
-            <li><input type="checkbox" checked disabled>
-                <details>Beispiele für Elektromotoren
-                    <summary>
-                        <li>Nach Bauart:</li>
+        <li class="bg-gray-800 p-4 rounded-lg shadow-md flex items-start">
+            <i data-lucide="check-circle" class="w-5 h-5 text-green-400"></i>
+            <details class="ml-4 w-full">
+                <summary class="text-lg font-semibold cursor-pointer flex items-center gap-2">
+                    <i data-lucide="cpu" class="w-5 h-5"></i>
+                    Beispiele für Elektromotoren
+                </summary>
+                <ul class="mt-2 text-gray-300 text-sm pl-4 space-y-1">
+                    <li><strong>Nach Bauart:</strong></li>
+                    <ul class="pl-4">
                         <li>Gleichstrommotor (DC-Motor)</li>
-                        <ul>Bürstenmotor</ul>
-                        <ul>Bürstenloser Gleichstrommotor</ul>
                         <li>Wechselstrommotor (AC-Motor)</li>
-                        <ul>Asynchronmotor</ul>
-                        <ul>Synchronmotor</ul>
                         <li>Servomotor</li>
                         <li>Linearmotor</li>
-                        <br>
-                        <li>Nach Anwendung:</li>
-                        <li>1. Industrieanwendungen    z.B Förderbänder</li>
-                        <li>2. Haushaltsgeräte    z.B Waschmaschinen</li>
-                        <li>3. Modellbau    z.B Drohnen</li>
-                        <li><strong>4. Elektrofahrzeuge    z.B Teslas "Permanentmagnetmotor"</strong></li>
-                    </summary>
-                </details>
-            </li>
-            <br>
-            <li><input type="checkbox">
-                <details>Unterschied von Verbrennungsmotor & Elektromotor
-                    <summary>
-                        <table border="1">
-                            <tr>
-                                <th>Elektromotor</th>
-                                <th>Verbrennungsmotor</th>
-                            </tr>
-                            <tr>
-                                <td>Elektrische Energie</td>
-                                <td>Brennstoffe (Benzin, etc.)</td>
-                            </tr>
-                            <tr>
-                                <td>Strom fließt durch Drahtwicklungen und erzeugt ein Magnetfeld, das den Rotor rotiert</td>
-                                <td>Chemische Energie generiert Wärme & bewegt einen Kolben</td>
-                            </tr>
-                            <tr>
-                                <td>Keine direkten Emissionen</td>
-                                <td>Abgase wie CO2</td>
-                            </tr>
-                            <tr>
-                                <td>Effizienter, da elektrische Energie in mechanische Arbeit umgewandelt wird</td>
-                                <td>Schlechter, da ein Teil der Energie in Wärme umgewandelt wird</td>
-                            </tr>
-                            <tr>
-                                <td>Keine beweglichen Teile</td>
-                                <td>Regelmäßige Wartung wie Ölwechsel</td>
-                            </tr>
-                            <tr>
-                                <td>Leise</td>
-                                <td>Laut, da bewegliche Teile im Verbrennungsprozess sich bewegen</td>
-                            </tr>
-                        </table>
-                        <p>Fazit:
-                            <li>Elektromotor: Leise, keine Verbrennungsstoffe</li>
-                            <li>Verbrennungsmotor: Laut, viele Abgase durch Verbrennung</li>
-                        </p>
+                    </ul>
+                    <li><strong>Nach Anwendung:</strong></li>
+                    <ul class="pl-4">
+                        <li>Industrieanwendungen – z.B. Förderbänder</li>
+                        <li>Haushaltsgeräte – z.B. Waschmaschinen</li>
+                        <li>Modellbau – z.B. Drohnen</li>
+                        <li><strong>Elektrofahrzeuge – z.B. Teslas "Permanentmagnetmotor"</strong></li>
+                    </ul>
+                </ul>
+            </details>
+        </li>
 
-                    </summary>
-                </details>
-            </li>
-            <br>
-            <li><input type="checkbox">Umweltfreundlichkeit</li>
-            <br>
-            <li><input type="checkbox">Was gibt es aktuell (Batterielade Infrastruktur)</li>
-            <br>
-            <li><input type="checkbox">Unterschied von Hybrid und Elektromotor</li>
-            <br>
-            <li><input type="checkbox">Physikalischer Hintergrund</li>
-            <br>
-            <li><input type="checkbox">Nachhaltigkeit</li>
-            <br>
-            <li><input type="checkbox">Informationen zu Elektromotor (Wasserstoffauto)</li>
-        </ul>
-        
-    </body>
+        <li class="bg-gray-800 p-4 rounded-lg shadow-md flex items-start">
+            <i data-lucide="circle" class="w-5 h-5 text-gray-400"></i>
+            <span class="ml-4 text-lg flex items-center gap-2">
+                <i data-lucide="leaf" class="w-5 h-5"></i>
+                Umweltfreundlichkeit
+            </span>
+        </li>
+
+        <li class="bg-gray-800 p-4 rounded-lg shadow-md flex items-start">
+            <i data-lucide="circle" class="w-5 h-5 text-gray-400"></i>
+            <span class="ml-4 text-lg flex items-center gap-2">
+                <i data-lucide="battery-charging" class="w-5 h-5"></i>
+                Batterielade-Infrastruktur
+            </span>
+        </li>
+
+        <li class="bg-gray-800 p-4 rounded-lg shadow-md flex items-start">
+            <i data-lucide="circle" class="w-5 h-5 text-gray-400"></i>
+            <span class="ml-4 text-lg flex items-center gap-2">
+                <i data-lucide="car" class="w-5 h-5"></i>
+                Unterschied von Hybrid- und Elektromotor
+            </span>
+        </li>
+
+        <li class="bg-gray-800 p-4 rounded-lg shadow-md flex items-start">
+            <i data-lucide="circle" class="w-5 h-5 text-gray-400"></i>
+            <span class="ml-4 text-lg flex items-center gap-2">
+                <i data-lucide="atom" class="w-5 h-5"></i>
+                Physikalischer Hintergrund
+            </span>
+        </li>
+
+        <li class="bg-gray-800 p-4 rounded-lg shadow-md flex items-start">
+            <i data-lucide="circle" class="w-5 h-5 text-gray-400"></i>
+            <span class="ml-4 text-lg flex items-center gap-2">
+                <i data-lucide="recycle" class="w-5 h-5"></i>
+                Nachhaltigkeit
+            </span>
+        </li>
+
+        <li class="bg-gray-800 p-4 rounded-lg shadow-md flex items-start">
+            <i data-lucide="circle" class="w-5 h-5 text-gray-400"></i>
+            <span class="ml-4 text-lg flex items-center gap-2">
+                <i data-lucide="droplet" class="w-5 h-5"></i>
+                Informationen zu Elektromotoren (Wasserstoffauto)
+            </span>
+        </li>
+    </ul>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body>
 </html>
